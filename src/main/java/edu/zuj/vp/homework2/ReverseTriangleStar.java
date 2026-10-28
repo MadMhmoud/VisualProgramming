@@ -11,13 +11,12 @@ public class ReverseTriangleStar {
         System.out.print("Enter Stars Number : ");
         int num = scan.nextInt();
         
-        for (int i = 0; i <= num; i++) {
-            int starCount = num - i;
+        for (int i = 1; i <= num; i++) {
             
-            for (int j = 0; j < num - starCount; j++) {
+            for (int j = 0; j < num - i; j++) {
                 System.out.print(" ");
             }
-            System.out.println("*".repeat(starCount));
+            System.out.println("*".repeat(i));
         }
         
     }
